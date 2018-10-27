@@ -7,7 +7,7 @@ import HomeScreen from './screens/Home'
 import FavoritesScreen from './screens/Favorites'
 import AuthLoadingScreen from './screens/AuthLoadingScreen'
 
-import firebase, { db } from './firebase'
+import { registerForPushNotificationsAsync } from './notifications'
 
 const AppStack = createBottomTabNavigator(
   {
@@ -57,5 +57,8 @@ const MainNavigator = createSwitchNavigator(
 export default class App extends Component {
   render() {
     return <MainNavigator />
+  }
+  componentDidMount() {
+    registerForPushNotificationsAsync()
   }
 }

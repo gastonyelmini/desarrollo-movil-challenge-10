@@ -2,12 +2,12 @@ import firebase from 'firebase'
 import 'firebase/firestore'
 
 const config = {
-  apiKey: 'AIzaSyDcvAVDGSr5otrT1HeJOZK44jZ8R6iM6aI',
-  authDomain: 'coderhouse-test.firebaseapp.com',
-  databaseURL: 'https://coderhouse-test.firebaseio.com',
-  projectId: 'coderhouse-test',
-  storageBucket: 'coderhouse-test.appspot.com',
-  messagingSenderId: '834425741739',
+  apiKey: 'AIzaSyBYa_j7uULGjtwltmC5tJ0aVIp-EIB7MaU',
+  authDomain: 'react-native-test-11eb0.firebaseapp.com',
+  databaseURL: 'https://react-native-test-11eb0.firebaseio.com',
+  projectId: 'react-native-test-11eb0',
+  storageBucket: 'react-native-test-11eb0.appspot.com',
+  messagingSenderId: '1051844232768',
 }
 
 firebase.initializeApp(config)
