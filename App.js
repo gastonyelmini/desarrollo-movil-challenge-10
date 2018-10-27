@@ -61,7 +61,7 @@ export default class App extends Component {
   }
   componentDidMount() {
     registerForPushNotificationsAsync()
-    this._notificationSubscription = Notifications.addListener(this._handleNotification)
+    Notifications.addListener(this._handleNotification)
   }
   _handleNotification = notification => {
     //Envío desde la tool { "message" : "Mi vieja mula" }
